@@ -1,0 +1,13 @@
+@each $prop,$value in $palette {
+    .color-#{$prop} {
+        color: $value !important;
+    }
+
+    .bg-#{$prop} {
+        background: $value !important;
+	}
+	
+	.bg-transparent {
+		background: transparent !important;
+	}
+}

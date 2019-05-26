@@ -1,0 +1,19 @@
+@each $prop,$value in $texts {
+    .text-#{$prop} {
+        @each $p,$v in $value {
+            #{$p}: $v !important;
+        }
+    }
+}
+.lh1 {
+	line-height: 1;
+}
+.align-middle {
+	vertical-align: middle !important;
+}
+.align-top {
+	vertical-align: top !important;
+}
+.align-bottom {
+	vertical-align: bottom !important;
+}

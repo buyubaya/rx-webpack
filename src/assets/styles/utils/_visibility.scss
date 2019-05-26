@@ -1,0 +1,25 @@
+@mixin hide($device,$width){
+	$device1: $device;
+	$device2: $device;
+	@media screen and (min-width: #{$width}px) {
+		@if ($device != '') {
+			$device1: "-from-#{$device}";
+		}
+		@for $i from 1 through 12 {
+			.hide#{$device1} {
+				display: none;
+			}
+		}
+	}
+	@media screen and (max-width: #{$width - 1}px) {
+		$device2: "-to-#{$device}";
+		@for $i from 1 through 12 {
+			.hide#{$device2} {
+				display: none;
+			}
+		}
+	}
+}
+@each $device,$width in $breakpoints {
+	@include hide($device,$width);
+}

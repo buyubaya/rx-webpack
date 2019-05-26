@@ -1,0 +1,86 @@
+body {
+    background: $admin-body-bg !important;
+}
+
+.admin-page {
+    .admin-sidebar-area {
+        width: 200px;
+        color: #b7c9cc;
+        background: map-get($palette, dark);
+        position: fixed;
+        padding-top: 57px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+    
+        .admin-sidebar-list {
+            .admin-sidebar-list-item > span {
+                display: block;
+                cursor: pointer;
+                padding: 10px 20px;
+    
+                &:hover {
+                    color: #fff;
+                    background: map-get($palette, primary);
+                }
+            }
+
+            .admin-sidebar-list-item-icon {
+                margin-right: 10px;
+            }
+    
+            .admin-sidebar-sublist {
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+    
+                & > .admin-sidebar-list-item {
+                    & > span {
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    /******************** MAIN AREA ********************/
+    .admin-main-area {
+        padding-left: 200px;
+    }
+
+
+    /******************** BREADCRUMB ********************/
+    .breadcrumb-area {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    
+    /******************** TABLE ********************/
+    .table-area {    
+        .table-image {
+            width: 50px;
+        }
+    }
+
+    .ant-table {
+        background: #fff;
+    }
+
+    .ant-table-header-column {
+        display: block !important;
+        position: relative !important;
+    }
+
+
+    /******************** PAGINATION ********************/
+    .ant-pagination-item {
+        background: #fff;
+    }
+    
+    
+    /******************** FORM ********************/
+    .admin-form-area {
+        // background: #000;
+    }
+}

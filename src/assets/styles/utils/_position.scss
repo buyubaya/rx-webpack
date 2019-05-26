@@ -1,0 +1,28 @@
+.pos-rel {
+	position: relative;
+}
+.pos-abs {
+	position: absolute;
+}
+.pos-center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.pos-center-x {
+	left: 50%;
+	transform: translateX(-50%);
+}
+.pos-center-y {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.m0auto {
+	margin: 0 auto;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}

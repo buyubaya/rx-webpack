@@ -1,0 +1,99 @@
+@for $i from 0 through 10 {
+	.p-#{$i} {
+		padding: $i*$space-base !important;	
+	}
+	.pt-#{$i} {
+		padding-top: $i*$space-base !important;	
+	}
+	.pr-#{$i} {
+		padding-right: $i*$space-base !important;	
+	}
+	.pb-#{$i} {
+		padding-bottom: $i*$space-base !important;	
+	}
+	.pl-#{$i} {
+		padding-left: $i*$space-base !important;	
+	}
+	.px-#{$i} {
+		padding-left: $i*$space-base !important;
+		padding-right: $i*$space-base !important;
+	}
+	.py-#{$i} {
+		padding-top: $i*$space-base !important;
+		padding-bottom: $i*$space-base !important;
+	}
+	.m-#{$i} {
+		margin: $i*$space-base !important;	
+	}
+	.mt-#{$i} {
+		margin-top: $i*$space-base !important;	
+	}
+	.mr-#{$i} {
+		margin-right: $i*$space-base !important;	
+	}
+	.mb-#{$i} {
+		margin-bottom: $i*$space-base !important;	
+	}
+	.ml-#{$i} {
+		margin-left: $i*$space-base !important;	
+	}
+	.mx-#{$i} {
+		margin-left: $i*$space-base !important;
+		margin-right: $i*$space-base !important;
+	}
+	.my-#{$i} {
+		margin-top: $i*$space-base !important;
+		margin-bottom: $i*$space-base !important;	
+	}
+}
+
+
+@each $prop,$value in $spaces {
+    .p-#{$prop} {
+        padding: $value !important;
+	}
+	.pl-#{$prop} {
+        padding-left: $value !important;
+	}
+	.pr-#{$prop} {
+        padding-right: $value !important;
+	}
+	.pt-#{$prop} {
+        padding-top: $value !important;
+	}
+	.pb-#{$prop} {
+        padding-bottom: $value !important;
+	}
+	.px-#{$prop} {
+		padding-left: $value !important;
+		padding-right: $value !important;
+	}
+	.py-#{$prop} {
+		padding-top: $value !important;
+		padding-bottom: $value !important;
+	}
+
+	.m-#{$prop} {
+        margin: $value !important;
+	}
+	.ml-#{$prop} {
+        margin-left: $value !important;
+	}
+	.mr-#{$prop} {
+        margin-right: $value !important;
+	}
+	.mt-#{$prop} {
+        margin-top: $value !important;
+	}
+	.mb-#{$prop} {
+        margin-bottom: $value !important;
+	}
+	.mx-#{$prop} {
+		margin-left: $value !important;
+		margin-right: $value !important;
+	}
+	.my-#{$prop} {
+		margin-top: $value !important;
+		margin-bottom: $value !important;
+	}
+}

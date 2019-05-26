@@ -1,0 +1,52 @@
+/******************** GRID ********************/
+$breakpoints: ('xs': 320,'sm': 480,'md': 640,'lg': 768,'xl': 1024,'xxl': 1200);
+$gutter: 15px;
+
+
+/******************** COLOR ********************/
+$palette: (
+    primary: #1ba94c,
+    primary-light: lighten(#1ba94c, 30%),
+    primary-lightest: lighten(#1ba94c, 55%),
+    secondary: #f90,
+    error: #f5222d,
+    success: #0c6,
+    dark: #39424e
+);
+
+
+/******************** TEXT ********************/
+$primary-text-color: #738f93;
+$primary-text-font-size: 14px;
+$texts: (
+    sm: (font-size: 0.9rem, line-height: 1.5),
+    md: (font-size: 1.5rem, line-height: 2), 
+    lg: (font-size: 2rem, line-height: 1.5),
+    bold: (font-weight: bold),
+    italic: (font-style: italic),
+    underline: (text-decoration: underline),
+    remove: (text-decoration: line-through),
+    uppercase: (text-transform: uppercase),
+    lowercase: (text-transform: lowercase),
+    camelcase: (text-transform: capitalize),
+    none: (text-transform: none),
+    inherit: (text-transform: inherit),
+    left: (text-align: left),
+    right: (text-align: right),
+    center: (text-align: center),
+);
+
+
+/******************** SPACE ********************/
+$space-base: 5px;
+$spaces: (
+    xs: 25px,
+    sm: 40px,
+    md: 60px,
+    lg: 100px,
+    xl: 120px
+);
+
+
+/******************** ADMIN ********************/
+$admin-body-bg: #f3f7f7;
