@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './assets/styles/index.scss';
-import AdminPage from './pages/AdminPage';
+import '@/assets/styles/index.scss';
+import AdminPage from '@/pages/AdminPage';
 
 
 class App extends React.Component {

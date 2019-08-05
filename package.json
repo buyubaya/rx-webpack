@@ -3,9 +3,9 @@
 	"version": "1.0.0",
 	"description": "SAMPLE",
 	"scripts": {
-		"build:dev": "webpack --config webpack_config/webpack.config.development.js",
-		"start": "webpack-dev-server --config webpack_config/webpack.config.development.js",
-		"build": "webpack --config webpack_config/webpack.config.production.js"
+		"build:dev": "set NODE_ENV=development && webpack --config webpack_config/webpack.config.js",
+		"start": "webpack-dev-server --config webpack_config/webpack.config.js",
+		"build:prod": "set NODE_ENV=production && webpack --config webpack_config/webpack.config.js"
 	},
 	"author": "me",
 	"license": "UNLICENSED",
